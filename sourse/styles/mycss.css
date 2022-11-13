@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+body {
+    font-family: Michroma, Times;
+    background: linear-gradient(90deg, #0099ff80 0%, rgb(38, 0, 255) 100%);
+}
+
+.nav-link {
+    color: rgba(0, 217, 255, 0.699);
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(0, 132, 255);
+}
+
+.navbar-brand img{
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: royalblue;
+}
+
+.sidebar {
+    color: aquamarine;
+    background: linear-gradient(270deg, #0099ff80 0%, rgb(38, 0, 255) 100%);
+}
+
+.card {
+    background: linear-gradient(180deg, #05977380 0%, rgb(15, 6, 68) 100%);
+    color:#00ffd580;
+}
+
+.card a {
+    text-decoration: none;
+    color:#00ffd580;
+}
+
+.slide-text {
+    color: aqua;
+    /* auto auto - и по x и по y задать центральное положение */
+    margin: auto auto;
+}
+
+.footer-text {
+    font-size: larger;
+    color: Indigo;
+    margin: auto auto;
+}
+
+footer {
+    background: linear-gradient(191deg, #FF0000 0%, #1FFF00 100%);
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Кнопочка:) */
+.btn-outline-primary {
+    background: linear-gradient(311deg, #004FFF 0%, #64FF00 100%);
+    color: #FFD800;
+}
+
+/* Анимация нафилета */
+.call-animation {
+    animation: myAnim 2s cubic-bezier(0, 0.55, 0.45, 1) 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+/*
+ чёртчки у карусели наслаиваются на текст на мобиле
+исправляем это
+ */
+ @media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+ }

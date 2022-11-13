@@ -1,0 +1,48 @@
+.bg-video {
+	/* 70vh - семьдесят % от экрана устройства */
+	height: 70vh;
+	width: 100%;
+	/* "шаманим" */
+	position: relative;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.bg-video video {
+	/* 70vh - семьдесят % от экрана устройства */
+	height: 70vh;
+	width: 100%;
+	/* "шаманим" */
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* Полякоторые которые невмещаются обрезывываем */
+	object-fit: cover;
+	/* Слой */
+	z-index: 1;
+}
+
+/* делаем видео более тёмным */
+.effect {
+	/* 70vh - семьдесят % от экрана устройства */
+	height: 70vh;
+	width: 100%;
+	/* "шаманим" */
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* Полякоторые которые невмещаются обрезывываем */
+	object-fit: cover;
+	/* Слой */
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.30);
+}
+
+.video-text {
+	color: aqua;
+	/* Слой */
+	z-index: 2;
+
+}
